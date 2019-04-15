@@ -1,1 +1,23 @@
-# dod-2020-basebudget-justification-books
+## What is in this repo?
+
+`PROCUREMENT` and `RDTE` justifications books (PDFs + attachments) harvested from the USD Comptroller website (http://comptroller.defense.gov/) for **2020**.
+
+The catalog of files that were harvested can be found by looking at the `jbook_list.json` file:
+
+## Each PDF file was..
+
+- Downloaded
+- Parsed for attachments
+- Any attachments that were zip files was unzipped (typically represented as .zzz files)
+
+by the included `fetch_jbook_list.php` script.
+
+
+> **IMPORTANT NOTE**
+>
+You do NOT necessarily need to run this script - as all of the extracted files are included in this repo.  A log of each the extract is also included in `fetch_jbook_list.log`
+
+
+## Why was this done?
+
+The XML files are a pain to download / extract from the PDF files uploaded to the comptroller sites - so we wrote a quick script to download and extract - and figured it was best to make the files available to everyone to save them the trouble.
